@@ -8,7 +8,7 @@ start(_Type, _Args) ->
 Dispatch = cowboy_router:compile([
 		{'_', [
 			{"/", cowboy_static, {priv_file, login, "login.html"}},
-			{"/[...]", my_handler, []}
+			{"/[my_handler]", my_handler, []}
 		]}
 	]),
 	{ok, _} = cowboy:start_http(http, 100, [{port, 8089}], 

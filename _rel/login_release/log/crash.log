@@ -3,3 +3,428 @@ Error in process <0.613.0> on node 'login@127.0.0.1' with exit value:
 {[{reason,{badarg,"Can't resolve the priv_dir of application loginpage"}},{mfa,{cowboy_static,rest_init,2}},{stacktrace,[{cowboy_static,priv_path,2,[{file,"src/cowboy_static.erl"},{line,73}]},{cowboy_static,rest_init_opts,2,[{file,"src/cowboy_static.erl"},{line,62}]},{cowboy_rest,upgrade,4,[{file,"src/cowboy_rest.erl"},{line,64}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.502>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.613.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40938}},{host,<<"localhost">>},{host_info,undefined},{port,8089},{path,<<"/nb">>},{path_info,[<<"nb">>]},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:8089">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate, sdch, br">>},{<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6">>},{<<"if-none-match">>,<<"\"585297579\"">>},{<<"if-modified-since">>,<<"Tue, 18 Apr 2017 05:45:16 GMT">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{opts,{priv_file,loginpage,"login.html"}}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
 2017-04-18 13:07:02 =ERROR REPORT====
 Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.613.0> exit with reason: {[{reason,{badarg,"Can't resolve the priv_dir of application loginpage"}},{mfa,{cowboy_static,rest_init,2}},{stacktrace,[{cowboy_static,priv_path,2,[{file,"src/cowboy_static.erl"},{line,73}]},{cowboy_static,rest_init_opts,2,[{file,"src/cowboy_static.erl"},{line,62}]},{cowboy_rest,upgrade,4,[{file,"src/cowboy_rest.erl"},{line,64}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.502>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.613.0>},{method,<<"GET">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},40938}},{host,<<"localhost">>},{host_info,undefined},{port,8089},{path,<<"/nb">>},{path_info,[<<"nb">>]},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"localhost:8089">>},{<<"connection">>,<<"keep-alive">>},{<<"upgrade-insecure-requests">>,<<"1">>},{<<"user-agent">>,<<"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36">>},{<<"accept">>,<<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate, sdch, br">>},{<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6">>},{<<"if-none-match">>,<<"\"585297579\"">>},{<<"if-modified-since">>,<<"Tue, 18 Apr 2017 05:45:16 GMT">>}]},{p_headers,[{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[]},{body_state,waiting},{buffer,<<>>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[]},{resp_body,<<>>},{onresponse,undefined}]},{opts,{priv_file,loginpage,"login.html"}}],[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+2017-04-19 11:56:47 =ERROR REPORT====
+** Generic server <0.616.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.615.0>,#Ref<0.0.4.333>},{equery,"insert into login where values id=$1 and password=$2",[<<"b">>,<<"a">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.506>,<<>>,{7395,1065706568},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:56:47 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.616.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.615.0>]
+    messages: []
+    links: [<0.615.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1760
+  neighbours:
+    neighbour: [{pid,<0.615.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.616.0>,#Port<0.504>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,25},{reductions,2584}]
+2017-04-19 11:56:47 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.615.0> exit with reason: {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:56:47 =ERROR REPORT====
+** Generic server <0.620.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.619.0>,#Ref<0.0.4.334>},{equery,"insert into login where values id=$1 and password=$2",[<<"b">>,<<"a">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.508>,<<>>,{7396,1629116087},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:56:47 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.620.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.619.0>]
+    messages: []
+    links: [<0.619.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.619.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.620.0>,#Port<0.507>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,25},{reductions,2569}]
+2017-04-19 11:56:47 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.619.0> exit with reason: {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:56:52 =ERROR REPORT====
+** Generic server <0.622.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.621.0>,#Ref<0.0.2.155>},{equery,"insert into login where values id=$1 and password=$2",[<<"b">>,<<"a">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.510>,<<>>,{7410,680502587},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:56:52 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.622.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.621.0>]
+    messages: []
+    links: [<0.621.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.621.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.622.0>,#Port<0.509>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2603}]
+2017-04-19 11:56:52 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.621.0> exit with reason: {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:57:22 =ERROR REPORT====
+** Generic server <0.624.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.623.0>,#Ref<0.0.2.163>},{equery,"insert into login where values id=$1 and password=$2",[<<"b">>,<<"a">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.512>,<<>>,{7431,2010615816},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:57:22 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.624.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.623.0>]
+    messages: []
+    links: [<0.623.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.623.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.624.0>,#Port<0.511>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2603}]
+2017-04-19 11:57:22 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.623.0> exit with reason: {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:58:22 =ERROR REPORT====
+** Generic server <0.626.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.625.0>,#Ref<0.0.4.455>},{equery,"insert into login where values id=$1 and password=$2",[<<"b">>,<<"a">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.514>,<<>>,{7450,147257918},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:58:22 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.626.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.625.0>]
+    messages: []
+    links: [<0.625.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.625.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.626.0>,#Port<0.513>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,25},{reductions,2569}]
+2017-04-19 11:58:22 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.625.0> exit with reason: {{badmatch,"insert into login where values id=$1 and password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:59:42 =ERROR REPORT====
+** Generic server <0.614.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.613.0>,#Ref<0.0.1.100>},{equery,"insert into login where values id=$1 or password=$2",[<<"x">>,<<"y">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.504>,<<>>,{8053,1120624352},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:59:42 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.614.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.613.0>]
+    messages: []
+    links: [<0.613.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1760
+  neighbours:
+    neighbour: [{pid,<0.613.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.614.0>,#Port<0.502>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,25},{reductions,2601}]
+2017-04-19 11:59:42 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.613.0> exit with reason: {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:59:42 =ERROR REPORT====
+** Generic server <0.618.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.617.0>,#Ref<0.0.3.279>},{equery,"insert into login where values id=$1 or password=$2",[<<"x">>,<<"y">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.506>,<<>>,{8054,1031573550},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:59:42 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.618.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.617.0>]
+    messages: []
+    links: [<0.617.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.617.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.618.0>,#Port<0.505>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2603}]
+2017-04-19 11:59:42 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.617.0> exit with reason: {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:59:47 =ERROR REPORT====
+** Generic server <0.620.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.619.0>,#Ref<0.0.1.120>},{equery,"insert into login where values id=$1 or password=$2",[<<"x">>,<<"y">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.508>,<<>>,{8073,266176381},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 11:59:47 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.620.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.619.0>]
+    messages: []
+    links: [<0.619.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.619.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.620.0>,#Port<0.507>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2603}]
+2017-04-19 11:59:47 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.619.0> exit with reason: {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:00:17 =ERROR REPORT====
+** Generic server <0.622.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.621.0>,#Ref<0.0.3.336>},{equery,"insert into login where values id=$1 or password=$2",[<<"x">>,<<"y">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.510>,<<>>,{8093,1751657040},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:00:17 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.622.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.621.0>]
+    messages: []
+    links: [<0.621.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.621.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.622.0>,#Port<0.509>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2600}]
+2017-04-19 12:00:17 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.621.0> exit with reason: {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:01:17 =ERROR REPORT====
+** Generic server <0.624.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.623.0>,#Ref<0.0.3.409>},{equery,"insert into login where values id=$1 or password=$2",[<<"x">>,<<"y">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.512>,<<>>,{8113,562407907},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:01:17 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.624.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.623.0>]
+    messages: []
+    links: [<0.623.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1831
+  neighbours:
+    neighbour: [{pid,<0.623.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.624.0>,#Port<0.511>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2600}]
+2017-04-19 12:01:17 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.623.0> exit with reason: {{badmatch,"insert into login where values id=$1 or password=$2"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,260}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:34:52 =ERROR REPORT====
+** Generic server <0.616.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.615.0>,#Ref<0.0.4.416>},{prepared_query,"insert into login values($1,$2)",[<<"nb">>,<<"bcx">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.506>,<<>>,{13503,698432190},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:34:52 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.616.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.615.0>]
+    messages: []
+    links: [<0.615.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1760
+  neighbours:
+    neighbour: [{pid,<0.615.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.616.0>,#Port<0.504>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,25},{reductions,2566}]
+2017-04-19 12:34:52 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.615.0> exit with reason: {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:34:52 =ERROR REPORT====
+** Generic server <0.620.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.619.0>,#Ref<0.0.4.430>},{prepared_query,"insert into login values($1,$2)",[<<"nb">>,<<"bcx">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.508>,<<>>,{13504,1975993802},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:34:52 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.620.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.619.0>]
+    messages: []
+    links: [<0.619.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1827
+  neighbours:
+    neighbour: [{pid,<0.619.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.620.0>,#Port<0.507>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2569}]
+2017-04-19 12:34:52 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.619.0> exit with reason: {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:34:57 =ERROR REPORT====
+** Generic server <0.622.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.621.0>,#Ref<0.0.4.453>},{prepared_query,"insert into login values($1,$2)",[<<"nb">>,<<"bcx">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.510>,<<>>,{13523,1012154676},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:34:57 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.622.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.621.0>]
+    messages: []
+    links: [<0.621.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1827
+  neighbours:
+    neighbour: [{pid,<0.621.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.622.0>,#Port<0.509>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2569}]
+2017-04-19 12:34:57 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.621.0> exit with reason: {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:35:27 =ERROR REPORT====
+** Generic server <0.624.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.623.0>,#Ref<0.0.4.495>},{prepared_query,"insert into login values($1,$2)",[<<"nb">>,<<"bcx">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.512>,<<>>,{13547,480363539},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:35:27 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.624.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.623.0>]
+    messages: []
+    links: [<0.623.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1827
+  neighbours:
+    neighbour: [{pid,<0.623.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.624.0>,#Port<0.511>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2569}]
+2017-04-19 12:35:27 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.623.0> exit with reason: {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:35:59 =ERROR REPORT====
+** Generic server <0.614.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.613.0>,#Ref<0.0.2.465>},{prepared_query,"insert into login values($1,$2)",[<<"m">>,<<"nn">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.504>,<<>>,{14162,922074127},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:35:59 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.614.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.613.0>]
+    messages: []
+    links: [<0.613.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 1760
+  neighbours:
+    neighbour: [{pid,<0.613.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.614.0>,#Port<0.502>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,25},{reductions,2549}]
+2017-04-19 12:35:59 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.613.0> exit with reason: {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:35:59 =ERROR REPORT====
+** Generic server <0.618.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.617.0>,#Ref<0.0.4.200>},{prepared_query,"insert into login values($1,$2)",[<<"m">>,<<"nn">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.506>,<<>>,{14164,628770600},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:35:59 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.618.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.617.0>]
+    messages: []
+    links: [<0.617.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1827
+  neighbours:
+    neighbour: [{pid,<0.617.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.618.0>,#Port<0.505>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,1598},{stack_size,25},{reductions,2517}]
+2017-04-19 12:35:59 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.617.0> exit with reason: {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:36:04 =ERROR REPORT====
+** Generic server <0.620.0> terminating 
+** Last message in was {'$gen_cast',{{cast,<0.619.0>,#Ref<0.0.2.486>},{prepared_query,"insert into login values($1,$2)",[<<"m">>,<<"nn">>]}}}
+** When Server state == {state,gen_tcp,#Port<0.508>,<<>>,{14174,1647970932},on_message,{codec,[],[]},{[],[]},undefined,[{<<"application_name">>,<<>>},{<<"client_encoding">>,<<"UTF8">>},{<<"DateStyle">>,<<"ISO, MDY">>},{<<"integer_datetimes">>,<<"on">>},{<<"IntervalStyle">>,<<"postgres">>},{<<"is_superuser">>,<<"on">>},{<<"server_encoding">>,<<"UTF8">>},{<<"server_version">>,<<"9.5.6">>},{<<"session_authorization">>,<<"postgres">>},{<<"standard_conforming_strings">>,<<"on">>},{<<"TimeZone">>,<<"localtime">>}],[],[],[],[],[],undefined,73,select,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+** Reason for termination == 
+** {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+2017-04-19 12:36:04 =CRASH REPORT====
+  crasher:
+    initial call: epgsql_sock:init/1
+    pid: <0.620.0>
+    registered_name: []
+    exception exit: {{{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,812}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.619.0>]
+    messages: []
+    links: [<0.619.0>]
+    dictionary: [{datetime_mod,epgsql_idatetime}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1827
+  neighbours:
+    neighbour: [{pid,<0.619.0>},{registered_name,[]},{initial_call,{cowboy_protocol,init,4}},{current_function,{my_handler,get_html,2}},{ancestors,[]},{messages,[]},{links,[<0.493.0>,<0.620.0>,#Port<0.507>]},{dictionary,[]},{trap_exit,false},{status,waiting},{heap_size,987},{stack_size,25},{reductions,2549}]
+2017-04-19 12:36:04 =ERROR REPORT====
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.619.0> exit with reason: {{badmatch,"insert into login values($1,$2)"},[{epgsql_sock,command,2,[{file,"src/epgsql_sock.erl"},{line,272}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,601}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,667}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}

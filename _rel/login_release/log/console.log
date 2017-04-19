@@ -311,3 +311,500 @@
 2017-04-18 15:53:09.571 [info]   id is : 
 2017-04-18 15:53:09.571 [info]   query string value is : 
 2017-04-18 15:53:09.571 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"30">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:45:31.174 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.175 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.175 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.175 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.175 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.176 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.176 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.176 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 10:45:31.176 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 10:45:39.272 [info]  Entered the callback
+2017-04-19 10:45:39.272 [warning] <0.402.0> lager_error_logger_h dropped 73 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 10:45:39.281 [info]   query string value is : 
+2017-04-19 10:45:39.281 [info]   id is : undefined
+2017-04-19 10:45:39.281 [info]   query string value is : undefined
+2017-04-19 10:45:39.281 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"30">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:45:49.523 [info]  Entered the callback
+2017-04-19 10:45:49.530 [info]   query string value is : mailid=nn&password=mm
+2017-04-19 10:45:49.530 [info]   id is : nn
+2017-04-19 10:45:49.530 [info]   query string value is : mm
+2017-04-19 10:45:49.531 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"30">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:45:49.557 [info]  Entered the callback
+2017-04-19 10:45:49.569 [info]   query string value is : 
+2017-04-19 10:45:49.569 [info]   id is : undefined
+2017-04-19 10:45:49.569 [info]   query string value is : undefined
+2017-04-19 10:45:49.570 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"30">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:47:32.760 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.760 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.760 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.761 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.761 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.761 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.761 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.762 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 10:47:32.762 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 10:47:40.118 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 10:47:40.127 [info]   query string value is : mailid=bu&password=by
+2017-04-19 10:47:40.127 [info]   id is : bu
+2017-04-19 10:47:40.127 [info]   query string value is : by
+2017-04-19 10:47:40.128 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"30">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:47:40.156 [info]   query string value is : 
+2017-04-19 10:47:40.156 [info]   id is : undefined
+2017-04-19 10:47:40.156 [info]   query string value is : undefined
+2017-04-19 10:47:40.157 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"30">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:48:47.529 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.529 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.529 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.530 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.530 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.530 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.531 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.531 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 10:48:47.531 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.445 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.445 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.445 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.445 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.446 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.446 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.446 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.446 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 10:50:17.446 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 10:50:28.284 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 10:50:28.296 [info]   query string value is : mailid=aabb&password=ccdd
+2017-04-19 10:50:28.296 [info]   id is : aabb
+2017-04-19 10:50:28.296 [info]   query string value is : ccdd
+2017-04-19 10:50:28.298 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"30">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:55:38.527 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.528 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.528 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.528 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.529 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.529 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.529 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.530 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 10:55:38.530 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 10:55:51.910 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 10:55:51.922 [info]   query string value is : mailid=ssdd&password=dd
+2017-04-19 10:55:51.923 [info]   id is : ssdd
+2017-04-19 10:55:51.923 [info]   query string value is : dd
+2017-04-19 10:55:51.924 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"26">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 10:57:19.992 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.992 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.992 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.992 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.992 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.993 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.993 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.993 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 10:57:19.993 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 10:57:25.507 [warning] <0.402.0> lager_error_logger_h dropped 75 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 10:57:25.520 [info]   query string value is : mailid=qq&password=www
+2017-04-19 10:57:25.520 [info]   id is : qq
+2017-04-19 10:57:25.520 [info]   query string value is : www
+2017-04-19 10:57:25.551 [info]   query string value is : {ok,1}
+2017-04-19 10:59:10.149 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.149 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.149 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.150 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.150 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.150 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.151 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.151 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 10:59:10.151 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 10:59:15.014 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 10:59:15.023 [info]   query string value is : mailid=aa&password=sssss
+2017-04-19 10:59:15.023 [info]   id is : aa
+2017-04-19 10:59:15.023 [info]   query string value is : sssss
+2017-04-19 10:59:15.023 [info]   query string value is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"19">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 11:05:13.190 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.191 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.191 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.191 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.192 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.192 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.192 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.193 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 11:05:13.193 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 11:05:29.259 [warning] <0.402.0> lager_error_logger_h dropped 73 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 11:05:29.266 [info]   query string value is : mailid=oo&password=ppp
+2017-04-19 11:05:29.266 [info]   id is : oo
+2017-04-19 11:05:29.266 [info]   query string value is : ppp
+2017-04-19 11:05:29.266 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"id\" does not exist">>,[{file,<<"parse_relation.c">>},{hint,<<"There is a column named \"id\" in table \"login\", but it cannot be referenced from this part of the query.">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:06:40.186 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.186 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.187 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.187 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.187 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.187 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.188 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.188 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 11:06:40.188 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 11:06:46.509 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 11:06:46.518 [info]   query string value is : mailid=mm&password=ll
+2017-04-19 11:06:46.518 [info]   id is : mm
+2017-04-19 11:06:46.518 [info]   query string value is : ll
+2017-04-19 11:06:46.518 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"id\" does not exist">>,[{file,<<"parse_relation.c">>},{hint,<<"There is a column named \"id\" in table \"login\", but it cannot be referenced from this part of the query.">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:08:24.087 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.087 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.087 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.088 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.088 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.089 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.089 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.089 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 11:08:24.089 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 11:08:33.097 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 11:08:33.107 [info]   query string value is : mailid=n&password=m
+2017-04-19 11:08:33.107 [info]   id is : n
+2017-04-19 11:08:33.107 [info]   query string value is : m
+2017-04-19 11:08:33.109 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"id\" does not exist">>,[{file,<<"parse_relation.c">>},{hint,<<"There is a column named \"id\" in table \"login\", but it cannot be referenced from this part of the query.">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:09:46.155 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.155 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.156 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.156 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.156 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.157 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.157 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.157 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 11:09:46.157 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 11:09:48.685 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 11:09:48.692 [info]   query string value is : mailid=n&password=m
+2017-04-19 11:09:48.692 [info]   id is : n
+2017-04-19 11:09:48.692 [info]   query string value is : m
+2017-04-19 11:09:48.704 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"mail\" does not exist">>,[{file,<<"parse_relation.c">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:09:49.416 [info]   query string value is : mailid=n&password=m
+2017-04-19 11:09:49.416 [info]   id is : n
+2017-04-19 11:09:49.417 [info]   query string value is : m
+2017-04-19 11:09:49.418 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"mail\" does not exist">>,[{file,<<"parse_relation.c">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:09:49.579 [info]   query string value is : mailid=n&password=m
+2017-04-19 11:09:49.579 [info]   id is : n
+2017-04-19 11:09:49.579 [info]   query string value is : m
+2017-04-19 11:09:49.579 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"mail\" does not exist">>,[{file,<<"parse_relation.c">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:09:49.781 [info]   query string value is : mailid=n&password=m
+2017-04-19 11:09:49.781 [info]   id is : n
+2017-04-19 11:09:49.781 [info]   query string value is : m
+2017-04-19 11:09:49.782 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"mail\" does not exist">>,[{file,<<"parse_relation.c">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:10:01.936 [info]   query string value is : mailid=r&password=e
+2017-04-19 11:10:01.936 [info]   id is : r
+2017-04-19 11:10:01.936 [info]   query string value is : e
+2017-04-19 11:10:01.937 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"mail\" does not exist">>,[{file,<<"parse_relation.c">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:13:07.455 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.455 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.455 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.455 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.456 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.456 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.456 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.456 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 11:13:07.456 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 11:13:24.763 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 11:13:24.772 [info]   query string value is : mailid=a&password=b
+2017-04-19 11:13:24.772 [info]   id is : a
+2017-04-19 11:13:24.772 [info]   query string value is : b
+2017-04-19 11:13:24.773 [info]   query string value is : {error,{error,error,<<"42703">>,undefined_column,<<"column \"id\" does not exist">>,[{file,<<"parse_relation.c">>},{hint,<<"There is a column named \"id\" in table \"login\", but it cannot be referenced from this part of the query.">>},{line,<<"3183">>},{position,<<"27">>},{routine,<<"errorMissingColumn">>}]}}
+2017-04-19 11:56:30.217 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.218 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.218 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.219 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.219 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.219 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.219 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.220 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 11:56:30.220 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 11:56:47.066 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 11:56:47.081 [info]   query string value is : mailid=b&password=a
+2017-04-19 11:56:47.082 [info]   id is : b
+2017-04-19 11:56:47.082 [info]   query string value is : a
+2017-04-19 11:56:47.082 [error] <0.616.0> gen_server <0.616.0> terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:56:47.085 [error] <0.616.0> CRASH REPORT Process <0.616.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:56:47.085 [error] <0.615.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:56:47.192 [info]   query string value is : mailid=b&password=a
+2017-04-19 11:56:47.192 [info]   id is : b
+2017-04-19 11:56:47.192 [info]   query string value is : a
+2017-04-19 11:56:47.192 [error] <0.620.0> gen_server <0.620.0> terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:56:47.193 [error] <0.620.0> CRASH REPORT Process <0.620.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:56:47.193 [error] <0.619.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:56:52.219 [info]   query string value is : mailid=b&password=a
+2017-04-19 11:56:52.219 [info]   id is : b
+2017-04-19 11:56:52.219 [info]   query string value is : a
+2017-04-19 11:56:52.219 [error] <0.622.0> gen_server <0.622.0> terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:56:52.221 [error] <0.622.0> CRASH REPORT Process <0.622.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:56:52.221 [error] <0.621.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:57:22.236 [info]   query string value is : mailid=b&password=a
+2017-04-19 11:57:22.236 [info]   id is : b
+2017-04-19 11:57:22.236 [info]   query string value is : a
+2017-04-19 11:57:22.236 [error] <0.624.0> gen_server <0.624.0> terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:57:22.237 [error] <0.624.0> CRASH REPORT Process <0.624.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:57:22.237 [error] <0.623.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:58:22.261 [info]   query string value is : mailid=b&password=a
+2017-04-19 11:58:22.261 [info]   id is : b
+2017-04-19 11:58:22.261 [info]   query string value is : a
+2017-04-19 11:58:22.262 [error] <0.626.0> gen_server <0.626.0> terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:58:22.264 [error] <0.626.0> CRASH REPORT Process <0.626.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:58:22.264 [error] <0.625.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 and password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:59:38.369 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.370 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.370 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.371 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.371 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.371 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.371 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.372 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 11:59:38.372 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 11:59:42.220 [warning] <0.402.0> lager_error_logger_h dropped 42 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 11:59:42.234 [info]   query string value is : mailid=x&password=y
+2017-04-19 11:59:42.234 [info]   id is : x
+2017-04-19 11:59:42.234 [info]   query string value is : y
+2017-04-19 11:59:42.235 [error] <0.614.0> gen_server <0.614.0> terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:59:42.237 [error] <0.614.0> CRASH REPORT Process <0.614.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:59:42.237 [error] <0.613.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:59:42.351 [info]   query string value is : mailid=x&password=y
+2017-04-19 11:59:42.351 [info]   id is : x
+2017-04-19 11:59:42.351 [info]   query string value is : y
+2017-04-19 11:59:42.352 [error] <0.618.0> gen_server <0.618.0> terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:59:42.353 [error] <0.618.0> CRASH REPORT Process <0.618.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:59:42.353 [error] <0.617.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:59:47.377 [info]   query string value is : mailid=x&password=y
+2017-04-19 11:59:47.377 [info]   id is : x
+2017-04-19 11:59:47.377 [info]   query string value is : y
+2017-04-19 11:59:47.382 [error] <0.620.0> gen_server <0.620.0> terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 11:59:47.384 [error] <0.620.0> CRASH REPORT Process <0.620.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 11:59:47.384 [error] <0.619.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 12:00:17.402 [info]   query string value is : mailid=x&password=y
+2017-04-19 12:00:17.402 [info]   id is : x
+2017-04-19 12:00:17.402 [info]   query string value is : y
+2017-04-19 12:00:17.403 [error] <0.622.0> gen_server <0.622.0> terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 12:00:17.405 [error] <0.622.0> CRASH REPORT Process <0.622.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 12:00:17.406 [error] <0.621.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 12:01:17.429 [info]   query string value is : mailid=x&password=y
+2017-04-19 12:01:17.429 [info]   id is : x
+2017-04-19 12:01:17.429 [info]   query string value is : y
+2017-04-19 12:01:17.430 [error] <0.624.0> gen_server <0.624.0> terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 12:01:17.432 [error] <0.624.0> CRASH REPORT Process <0.624.0> with 1 neighbours exited with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260 in gen_server:terminate/7 line 812
+2017-04-19 12:01:17.432 [error] <0.623.0> Ranch listener http terminated with reason: no match of right hand value "insert into login where values id=$1 or password=$2" in epgsql_sock:command/2 line 260
+2017-04-19 12:01:45.944 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.944 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.944 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.945 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.945 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.945 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.945 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.946 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:01:45.946 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:01:56.462 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:01:56.473 [info]   query string value is : mailid=k&password=kkkkkk
+2017-04-19 12:01:56.473 [info]   id is : k
+2017-04-19 12:01:56.474 [info]   password is : kkkkkk
+2017-04-19 12:01:56.476 [info]   result is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"19">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 12:03:19.356 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.356 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.356 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.356 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.357 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.357 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.357 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.358 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:03:19.358 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:03:23.442 [warning] <0.402.0> lager_error_logger_h dropped 67 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:03:23.447 [info]   query string value is : mailid=v&password=n
+2017-04-19 12:03:23.447 [info]   id is : v
+2017-04-19 12:03:23.447 [info]   password is : n
+2017-04-19 12:03:23.448 [info]   result is : {error,{error,error,<<"42601">>,syntax_error,<<"syntax error at or near \"where\"">>,[{file,<<"scan.l">>},{line,<<"1082">>},{position,<<"19">>},{routine,<<"scanner_yyerror">>}]}}
+2017-04-19 12:16:03.932 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.932 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.933 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.933 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.933 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.933 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.933 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.933 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:16:03.934 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:16:18.830 [warning] <0.402.0> lager_error_logger_h dropped 75 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:16:18.841 [info]   query string value is : mailid=tfhgjbnm&password=zfdxcgvb
+2017-04-19 12:16:18.841 [info]   id is : tfhgjbnm
+2017-04-19 12:16:18.841 [info]   password is : zfdxcgvb
+2017-04-19 12:16:19.002 [info]   result is : {ok,1}
+2017-04-19 12:17:09.520 [info]   query string value is : mailid=lavanya%40geekbull.in&password=lavanya
+2017-04-19 12:17:09.520 [info]   id is : lavanya@geekbull.in
+2017-04-19 12:17:09.520 [info]   password is : lavanya
+2017-04-19 12:17:09.577 [info]   result is : {ok,1}
+2017-04-19 12:20:20.903 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.903 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.903 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.904 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.904 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.904 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.904 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.905 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:20:20.905 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:20:41.103 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:20:41.113 [info]   query string value is : mailid=hi&password=helo
+2017-04-19 12:20:41.113 [info]   id is : hi
+2017-04-19 12:20:41.113 [info]   password is : helo
+2017-04-19 12:20:41.138 [info]   result is : {ok,1}
+2017-04-19 12:21:54.331 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.331 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.332 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.332 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.333 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.333 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.333 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.333 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:21:54.333 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:22:40.569 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:22:40.574 [info]   query string value is : mailid=mk&password=nk
+2017-04-19 12:22:40.574 [info]   id is : mk
+2017-04-19 12:22:40.574 [info]   password is : nk
+2017-04-19 12:22:40.612 [info]   result is : {ok,1}
+2017-04-19 12:34:37.204 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.204 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.205 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.205 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.205 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.206 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.206 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.206 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:34:37.206 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:34:52.644 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:34:52.655 [info]   query string value is : mailid=nb&password=bcx
+2017-04-19 12:34:52.655 [info]   id is : nb
+2017-04-19 12:34:52.655 [info]   password is : bcx
+2017-04-19 12:34:52.656 [error] <0.616.0> gen_server <0.616.0> terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:34:52.658 [error] <0.616.0> CRASH REPORT Process <0.616.0> with 1 neighbours exited with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272 in gen_server:terminate/7 line 812
+2017-04-19 12:34:52.658 [error] <0.615.0> Ranch listener http terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:34:52.798 [info]   query string value is : mailid=nb&password=bcx
+2017-04-19 12:34:52.798 [info]   id is : nb
+2017-04-19 12:34:52.798 [info]   password is : bcx
+2017-04-19 12:34:52.799 [error] <0.620.0> gen_server <0.620.0> terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:34:52.801 [error] <0.620.0> CRASH REPORT Process <0.620.0> with 1 neighbours exited with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272 in gen_server:terminate/7 line 812
+2017-04-19 12:34:52.801 [error] <0.619.0> Ranch listener http terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:34:57.823 [info]   query string value is : mailid=nb&password=bcx
+2017-04-19 12:34:57.824 [info]   id is : nb
+2017-04-19 12:34:57.824 [info]   password is : bcx
+2017-04-19 12:34:57.826 [error] <0.622.0> gen_server <0.622.0> terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:34:57.833 [error] <0.622.0> CRASH REPORT Process <0.622.0> with 1 neighbours exited with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272 in gen_server:terminate/7 line 812
+2017-04-19 12:34:57.834 [error] <0.621.0> Ranch listener http terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:35:27.838 [info]   query string value is : mailid=nb&password=bcx
+2017-04-19 12:35:27.838 [info]   id is : nb
+2017-04-19 12:35:27.838 [info]   password is : bcx
+2017-04-19 12:35:27.838 [error] <0.624.0> gen_server <0.624.0> terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:35:27.839 [error] <0.624.0> CRASH REPORT Process <0.624.0> with 1 neighbours exited with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272 in gen_server:terminate/7 line 812
+2017-04-19 12:35:27.839 [error] <0.623.0> Ranch listener http terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:35:52.177 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.178 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.178 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.178 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.178 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.179 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.179 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.179 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:35:52.179 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:35:59.166 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:35:59.180 [info]   query string value is : mailid=m&password=nn
+2017-04-19 12:35:59.180 [info]   id is : m
+2017-04-19 12:35:59.180 [info]   password is : nn
+2017-04-19 12:35:59.180 [error] <0.614.0> gen_server <0.614.0> terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:35:59.183 [error] <0.614.0> CRASH REPORT Process <0.614.0> with 1 neighbours exited with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272 in gen_server:terminate/7 line 812
+2017-04-19 12:35:59.184 [error] <0.613.0> Ranch listener http terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:35:59.318 [info]   query string value is : mailid=m&password=nn
+2017-04-19 12:35:59.318 [info]   id is : m
+2017-04-19 12:35:59.318 [info]   password is : nn
+2017-04-19 12:35:59.318 [error] <0.618.0> gen_server <0.618.0> terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:35:59.319 [error] <0.618.0> CRASH REPORT Process <0.618.0> with 1 neighbours exited with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272 in gen_server:terminate/7 line 812
+2017-04-19 12:35:59.320 [error] <0.617.0> Ranch listener http terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:36:04.343 [info]   query string value is : mailid=m&password=nn
+2017-04-19 12:36:04.343 [info]   id is : m
+2017-04-19 12:36:04.343 [info]   password is : nn
+2017-04-19 12:36:04.343 [error] <0.620.0> gen_server <0.620.0> terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:36:04.345 [error] <0.620.0> CRASH REPORT Process <0.620.0> with 1 neighbours exited with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272 in gen_server:terminate/7 line 812
+2017-04-19 12:36:04.345 [error] <0.619.0> Ranch listener http terminated with reason: no match of right hand value "insert into login values($1,$2)" in epgsql_sock:command/2 line 272
+2017-04-19 12:37:36.307 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.308 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.308 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.308 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.308 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.308 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.308 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.308 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:37:36.309 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:37:43.740 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:37:43.753 [info]   query string value is : mailid=kkmm&password=ll
+2017-04-19 12:37:43.753 [info]   id is : kkmm
+2017-04-19 12:37:43.753 [info]   password is : ll
+2017-04-19 12:37:43.816 [info]  FORMAT ERROR: " result is : ~s" [{ok,1}]
+2017-04-19 12:38:15.582 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.583 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.583 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.583 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.583 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.584 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.584 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.584 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:38:15.584 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:38:17.977 [warning] <0.402.0> lager_error_logger_h dropped 72 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:38:17.983 [info]   query string value is : mailid=m&password=%2Cmk
+2017-04-19 12:38:17.983 [info]   id is : m
+2017-04-19 12:38:17.983 [info]   password is : ,mk
+2017-04-19 12:38:18.046 [info]   result is : {ok,1}
+2017-04-19 12:40:42.939 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.940 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.940 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.940 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.941 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.941 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.941 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.942 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:40:42.942 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:40:45.301 [warning] <0.402.0> lager_error_logger_h dropped 73 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:40:45.311 [info]   query string value is : mailid=gee&password=
+2017-04-19 12:40:45.311 [info]   id is : gee
+2017-04-19 12:40:45.311 [info]   password is : 
+2017-04-19 12:40:45.348 [info]   result is : {ok,1}
+2017-04-19 12:41:00.803 [info]   query string value is : mailid=my&password=hio
+2017-04-19 12:41:00.803 [info]   id is : my
+2017-04-19 12:41:00.804 [info]   password is : hio
+2017-04-19 12:41:00.848 [info]   result is : {ok,1}
+2017-04-19 12:42:42.576 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.576 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.577 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.577 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.577 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.577 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.577 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.577 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:42:42.577 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.223 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.223 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.223 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.224 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.224 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.224 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.224 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.224 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:48:08.224 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.073 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.074 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.074 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.074 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.075 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.075 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.075 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.076 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:49:22.076 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.805 [info] <0.403.0> Application lager started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.805 [info] <0.403.0> Application crypto started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.805 [info] <0.403.0> Application cowlib started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.805 [info] <0.403.0> Application ranch started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.806 [info] <0.403.0> Application cowboy started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.806 [info] <0.403.0> Application asn1 started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.806 [info] <0.403.0> Application public_key started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.806 [info] <0.403.0> Application ssl started on node 'login@127.0.0.1'
+2017-04-19 12:49:53.806 [info] <0.403.0> Application epgsql started on node 'login@127.0.0.1'
+2017-04-19 12:50:09.415 [warning] <0.402.0> lager_error_logger_h dropped 74 messages in the last second that exceeded the limit of 50 messages/sec
+2017-04-19 12:50:09.422 [info]   query string value is : mailid=m&password=mn
+2017-04-19 12:50:09.422 [info]   id is : m
+2017-04-19 12:50:09.422 [info]   password is : mn
+2017-04-19 12:50:09.453 [info]   result is : {ok,1}
